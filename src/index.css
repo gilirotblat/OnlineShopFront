@@ -1,13 +1,267 @@
+
+
+:root {
+  --MENU_SIZE:300px;
+  --HEADR_SIZE :60px;
+}
+
+.shop {
+ padding-bottom: 20px !important;
+}
+
+.home{
+padding-left: 100px;
+padding-right: 100px;
+padding-bottom: 16px;
+}
+
+.plus{
+ align-self: center;
+ height: 550px !important;
+ width: 300px !important;
+}
+
+
+
+@font-face {
+  font-family: 'My Font';
+  src: url(./fonts/EduTASBeginner-Regular.ttf);
+}
+
+html {
+  font-family: 'My Font' !important;
+  font-size: 16px;
+}
+
+.my-header{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  align-items: center !important;
+  height: var(--HEADR_SIZE);
+  background-color: rgb(241, 237, 254)  !important;
+  display: flex;
+  position: sticky;
+padding: 10px;
+  justify-content: space-between;
+  top:0;
+  left:var(--MENU_SIZE);
+  border-radius: 5px;
+}
+.title-header{
+  padding-left: 295px;
+}
+
+ * {
+  box-sizing: border-box !important;
+ }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding-top:calc(var(--HEADR_SIZE) + 16px) !important;
+  margin-left: var(--MENU_SIZE) !important;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+
+.navbar {
+  background-color: rgb(241, 237, 254)  !important;
+}
+
+.login-container {
+  margin-top: calc(var(--HEADR_SIZE) + 100px) !important;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-inline:auto;
+  box-sizing: border-box; 
+  width: 400px; 
+  min-height: 300px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+label{
+  direction: ltr;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+h1{
+  align-items: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.simple-grid {
+  display: grid;
+  grid-template-columns:repeat(3,2fr);
+  column-gap: 16px;
+}
+
+.cart{
+}
+
+.cart-btn{
+  margin-right: 10px !important;
+}
+
+*::-webkit-scrollbar {
+
+  display: none;
+}
+
+.my-drawer{
+position: absolute;
+right: 0;
+margin-right: 480px;
+}
+
+/* .my-simple-grid {
+  padding-bottom: 16px;
+  padding-top: calc(var(--HEADR_SIZE) + 20px);;
+  margin-inline: auto !important;
+  display: grid !important;
+  row-gap: 3rem !important;
+  place-items: center;
+  width:fit-content;
+  grid-template-columns: repeat(3, minmax(1fr, 200px)) !important;
+}
+
+.my-simple-grid > div {
+width: 450px;
+} */
+.product-img{
+  padding: 7px;
+  border-radius: 20px !important;
+  max-height: 350px;
+  min-width: 200px;
+}
+
+
+
+.cart-img{
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 10px !important;
+  margin: 10px;
+  margin-right: 0;
+}
+
+
+.cart-icon{
+  margin-left: 180px;
+
+}
+.cart-item{
+  border: 0.5px solid #c8c2c2;
+  border-radius: 10px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 0.7fr 0.2fr 0.2fr 0.2fr 0.2fr;
+
+}
+
+.about-page{
+ text-align: center;
+padding: 20px;
+margin-inline:auto;
+margin: 25%;
+width: fit-content;
+  border: 0.5px solid #c8c2c2;
+  border-radius: 10px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid !important;
+}
+
+
+.order-page{
+text-align: center;
+align-content: center; 
+align-self: center;
+padding: 20px;
+ margin:400px;
+ margin-bottom: 50px;
+width: 460px ;
+margin-inline:auto;
+  border: 0.5px solid #c8c2c2;
+  border-radius: 10px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid !important;
+
+}
+.order-item{
+  border: 0.5px solid #c8c2c2;
+  width:410px;
+  border-radius: 10px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid !important;
+  margin-bottom: 20px; 
+  grid-template-columns: 1fr 1fr 1fr 1fr
+
+}
+.order-badge{
+  margin-left: 120px !important;
+}
+
+
+
+.text-ellipsis {
+  margin: 0;
+  font-size: small !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cart-delete{
+ margin:0;
+ margin-right: 10px !important;
+}
+
+.cart-btn {
+  margin: 0 !important;
+}
+
+
+.pay-btn{
+  margin-left: 180px;
+}
+
+.product-card{
+  display: grid !important;
+  padding: 10px;
+  /* width: 300px; */
+  
+
+}
+.shop-items{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+ .shop-items> div {
+  
+/* width: 350px; */
+  } 
+  .cvv{
+    padding-left: 20px;
+  }
+  .search{
+    padding-left: 16px;
+    padding-bottom: 8px;
+  }
+
+  .total-cart{
+
+  }
